@@ -1,0 +1,41 @@
+main, body {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+#cityName {
+   text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+    border: 1px solid gray;
+    height: 50px;
+}
+
+.fixedWidth {
+    width: 130px;
+}
+
+#results {
+    height: 300px;
+}
+
+button {
+    background: #007BFF;
+    color: white;
+    border-radius: 4px;
+    height: 30px;
+    cursor: pointer;
+}
+button:active {
+    background-color: orange;
+}
