@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Use this website to find information about countries and cities">
+    <meta name="keywords" content="country, city, neighbours, weather, timezone">
+    <title>Find your place!</title>
+    <link href="./libs/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Please select the country you want to find information about!</h1>
+    </header>
+    <main>
+        <select id="countryName"> 
+            <option value="RO">Romania</option>
+            <option value="FR">France</option>
+            <option value="PL">Poland</option>
+            <option value="IT">Italy</option>
+            <option value="ES">Spain</option>
+        </select>
+        <br />
+        <br />
+        <br />
+        <table>
+            <tr>
+                <th>API Name</th>
+                <th>API Description</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td class="fixedWidth">1. Neighbours</td>
+                <td>Returns all neighbours for a country or administrative division. </td>
+                <td class="fixedWidth"><button id="neighboursBtn">Submit</button></td>
+            </tr>
+            <tr>
+                <td class="fixedWidth">2. Weather</td>
+                <td>Returns the weather station and the most recent weather observation for the ICAO code</td>
+                <td class="fixedWidth"><button id="weatherBtn">Submit</button></td>
+            </tr>
+            <tr>
+                <td class="fixedWidth">3. Timezone</td>
+                <td>Returns the timezone at the lat/lng with gmt offset (1. January) and dst offset (1. July)</td>
+                <td class="fixedWidth"><button id="timezoneBtn">Submit</button></td>
+            </tr>
+            <tr>
+                <td id="results" colspan="3">
+                    <h3 id="header3"></h3>
+                    <h4 id="header4"></h4>
+                    <h4 id="header5"></h4>
+                    <h4 id="header6"></h4>
+                </td>
+            </tr>
+        </table>
+    </main>
+
+
+    <script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+	<script type="application/javascript" src="libs/js/script.js"></script>
+</body>
+</html>
